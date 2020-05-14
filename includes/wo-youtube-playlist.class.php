@@ -64,7 +64,7 @@ if( !class_exists( 'WOYP' ) ) :
          * @since   1.0.0
          */
         public static function enqueues() {
-            wp_enqueue_style( 'woyp-style', WOYP_PLUGIN_DIR_URL .'assets/css/woyp-style.css', [ 'woyp-lity' ] );
+            wp_enqueue_style( 'woyp-style', WOYP_PLUGIN_DIR_URL .'assets/css/woyp-style.css', [] );
 
             wp_register_script('woyp-qs', '//cdnjs.cloudflare.com/ajax/libs/qs/6.9.0/qs.min.js', [], NULL, TRUE);
             wp_enqueue_script( 'woyp-vue', '//cdn.jsdelivr.net/npm/vue/dist/vue.js', [], NULL, TRUE );
